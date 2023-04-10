@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <a href="test.html#3">ini ke paragraf 3</a>
+    <table border="solid 5px" style="border-collapse: collapse; width: 500px">
+      <caption>
+        Data Siswa
+      </caption>
+      <tr style="background-color: #ddd">
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Nama Orangtua</th>
+      </tr>
+
+      <tr>
+        <td>Budi</td>
+        <td>III</td>
+        <td>Budi</td>
+      </tr>
+
+      <tr style="background-color: #ddd">
+        <td>Ani</td>
+        <td>IV</td>
+        <td>Bu Ani</td>
+      </tr>
+
+      <tr>
+        <td>Jeki</td>
+        <td>IV</td>
+        <td>Pak Jeki</td>
+      </tr>
+
+      <tr>
+        <td>Anto</td>
+        <td>VI</td>
+        <td>Pak Anto</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table border="solid 4px" style="border-collapse: collapse; width: 500px">
+      <tr>
+        <th rowspan="2">Nama</th>
+        <th rowspan="2">Kelas</th>
+        <th colspan="2">Nama Orangtua</th>
+      </tr>
+      <tr>
+        <th>Ayah</th>
+        <th>Ibu</th>
+      </tr>
+      <tr>
+        <td>Budi</td>
+        <td>III</td>
+        <td>Pak Budi</td>
+        <td>Bu Budi</td>
+      </tr>
+
+      <tr>
+        <td>Ani</td>
+        <td>IV</td>
+        <td>Pak Ani</td>
+        <td>Bu Ani</td>
+      </tr>
+
+      <tr>
+        <td>Jeki</td>
+        <td>IV</td>
+        <td>Pak Jeki</td>
+        <td>Bu Jeki</td>
+      </tr>
+
+      <tr>
+        <td>Anto</td>
+        <td>VI</td>
+        <td>Pak Anto</td>
+        <td>Bu Anto</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <table border="solid 4px" style="border-collapse: collapse; width: 500px">
+      <tr>
+        <th>Nama</th>
+        <td>Joni</td>
+      </tr>
+      <tr>
+        <th rowspan="2">No.Kontak</th>
+        <td>09867532874283</td>
+      </tr>
+      <tr>
+        <td>593047534785</td>
+      </tr>
+    </table>
+
+    <h3>inline</h3>
+    <span style="border: solid 3px">Ini Object Pertama</span>
+    <span style="border: solid 3px">Ini Object Kedua</span>
+
+    <h3>blcok</h3>
+    <div style="border: solid 3px; display: inline">Ini Object Pertama</div>
+    <br />
+    <div style="border: solid 3px">Ini Object Kedua</div>
+
+    <h2>Ordered List</h2>
+    <h3>Daftar Minuman:</h3>
+    <ol type="1" start="10">
+      <li>kopi</li>
+      <li>Susu</li>
+      <li>Teh</li>
+    </ol>
+
+    <form action="ind" method="post">
+      <label for="username">Username</label>
+      <input type="text" maxlength="8" name="nama" id="username" placeholder="Name" /><br /><br />
+
+      <label for="password">Password</label>
+      <input type="password" name="pw" id="password" placeholder="Password" /> <br /><br />
+
+      <label for="kelamin">Jenis Kelamin</label><br />
+      <input type="radio" name="jeniskelamin" id="kelamin" />
+      <label for="kelamin">Pria</label>
+      <input type="radio" name="jeniskelamin" id="kelamin" />
+      <label for="kelamin">Wanita</label>
+      <br /><br />
+
+      <label for="bio">Deskripsi</label>
+      <textarea name="deskripsi" id="bio" cols="30" rows="10"></textarea>
+
+      <input type="submit" value="send" name="submit" />
+    </form>
+
+    <h3>Daftar Minuman:</h3>
+    <ol>
+      <li>Kopi</li>
+      <li>
+        Teh
+        <ul style="list-style-type: circle">
+          <li>Teh Tawar</li>
+          <li>Teh Manis</li>
+        </ul>
+      </li>
+      <li>Es Jeruk</li>
+      <li>Es Mangga</li>
+    </ol>
+  </body>
+</html>
